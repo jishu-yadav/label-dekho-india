@@ -4,11 +4,5 @@
     "api/index.py": {
       "maxDuration": 30
     }
-  },
-  "routes": [
-    {
-      "source": "/api/(.*)",
-      "destination": "/api/index.py"
-    }
-  ]
+  }
 }
