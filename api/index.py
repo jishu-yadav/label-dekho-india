@@ -24,7 +24,13 @@ app.add_middleware(
 @app.get("/")
 def read_root():
     return {"status": "active", "project": "Label Dekho India"}
-
+@app.get("/api/health")
+def health_check():
+    return {
+        "status": "healthy",
+        "service": "label-dekho-india-backend",
+        "environment": "vercel-serverless"
+    }
 @app.post("/api/analyze")
 async def analyze_label(
     file: UploadFile = File(...),
