@@ -8,8 +8,8 @@ from fastapi.responses import JSONResponse
 # Force-load .env environment variables
 load_dotenv()
 
-from services.vision_agent import analyze_label_image
-from services.audio_agent import generate_audio_base64
+from .services.vision_agent import analyze_label_image
+from .services.audio_agent import generate_audio_base64
 
 app = FastAPI(title="Label Dekho India API")
 
