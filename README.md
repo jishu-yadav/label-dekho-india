@@ -29,6 +29,6 @@
                        HTTP REST API (JSON)
                                │
   ┌────────────────────────────▼────────────────────────────┐
-  │                 BACKEND: Python FastAPI                 │
+  │                 API: Python FastAPI                 │
   │     (Hosted on Render - OpenAI GPT-4o + gTTS Engine)    │
   └─────────────────────────────────────────────────────────┘
